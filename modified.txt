@@ -1,0 +1,9 @@
+1. Changed filename from html&css/pages/transactions.html to html&css/pages/events.html
+
+2. added "events.html" as link in menu for "Upcoming events".
+
+3. sidebar button: "Transactions" changed to "find teammate", logo "hand-holding-usd" changed to "address-book"
+
+4. added new buttons (upcoming events, workspace, music, terminal)
+
+5. changes 2,3,4 are also implemented in settings.html, events.html.
