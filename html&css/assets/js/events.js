@@ -84,6 +84,7 @@ function find_location(){
         }
         populateTable(events_at_location)
     }
+    document.getElementById("get_location").value = "";
 }
 
 function find_name(){
@@ -102,6 +103,7 @@ function find_name(){
         }
         populateTable(events_at_name)
     }
+    document.getElementById("get_name").value = "";
 }
 
 // Another function to get list of all hackathons withing a circular region --> Maps API
