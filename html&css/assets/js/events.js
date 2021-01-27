@@ -72,7 +72,7 @@ function find_location(){
     document.getElementById("warn").innerHTML = "";
     var location = String(document.getElementById("get_location").value).toLowerCase();
     if(location == ""){
-        document.getElementById("warn").innerHTML = "";
+        document.getElementById("warn").innerHTML = "Please enter a location";
     }
     else{
         // Retrieves all entries whose event-location matches the string "location"
@@ -91,7 +91,7 @@ function find_name(){
     document.getElementById("warn").innerHTML = "";
     var name = String(document.getElementById("get_name").value).toLowerCase();
     if(name == ""){
-        document.getElementById("warn").innerHTML = "";
+        document.getElementById("warn").innerHTML = "Please enter an event name";
     }
     else{
         // Retrieves all entries whose event-location matches the string "location"
