@@ -371,13 +371,15 @@
                         <p class="mb-0">List of all the upcoming hackathons.</p>
                     </div>
                     <div>
-                      <label class="my-1 mr-2" for="country">Filter by</label>
                       <select class="form-select" id="country" aria-label="Default select example" onchange= "location = this.value;">
-                        <option selected value="javascript:reset_all()">None</option>
+                        <option selected value="javascript:reset_all()">Filter by</option>
                         <option value="javascript:add_option('select_date');">Event Date</option>
                         <option value="javascript:add_option('select_location');">Event Location</option>
                         <option value="javascript:add_option('select_name');">Event Name</option>
                       </select>
+                    </div>
+                    <div>
+                      <a href="../../../hackthons.csv" class="btn btn-outline-gray" download><i class="fas fa-download mr-1"></i> Download</a>
                     </div>
                 </div>
             </div>
@@ -412,7 +414,7 @@
 
               <label id="select_location" style="display: none;">
                 <div class="input-group">
-                  <input type="text" class="form-control" id="get_location" placeholder="Filter by location" aria-label="Search">
+                  <input type="text" class="form-control" id="get_location" placeholder="Filter by event location" aria-label="Search">
                   <span class="input-group-text" id="basic-addon2"><span class="fas fa-search-location"></span></span>
                   <button class="btn btn-outline-primary" type="button" onclick="find_location()">Filter</button>
                 </div>
@@ -420,7 +422,7 @@
 
               <label id="select_name" style="display: none;">
                 <div class="input-group">
-                  <input type="text" class="form-control" id="get_name" placeholder="Filter by name" aria-label="Search">
+                  <input type="text" class="form-control" id="get_name" placeholder="Filter by event name" aria-label="Search">
                   <span class="input-group-text" id="basic-addon2"><span class="fas fa-search"></span></span>
                   <button class="btn btn-outline-primary" type="button" onclick="find_name()">Filter</button>
                 </div>
@@ -450,6 +452,11 @@
                 </div>
             </div>
             <footer class="footer section py-5">
+              <div class="row">
+                <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+                    <p class="mb-0 text-center text-xl-left">Data Source: <a class="text-secondary mb-0" href="https://mlh.io/" target="_blank">Major League Hacking</a></p>
+                </div>
+              </div>
     <div class="row">
         <div class="col-12 col-lg-6 mb-4 mb-lg-0">
             <p class="mb-0 text-center text-xl-left">Copyright © 2019-<span class="current-year"></span> <a class="text-primary font-weight-normal" href="https://themesberg.com" target="_blank">Themesberg</a></p>
