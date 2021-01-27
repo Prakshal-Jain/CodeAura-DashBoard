@@ -118,6 +118,7 @@ function reset_all(){
 
 // Add date input to template
 function add_option(id){
+    document.getElementById("warn").innerHTML = "";
     for(let option of filters){
         if(option == id){
             document.getElementById(id).style.display = "block";
