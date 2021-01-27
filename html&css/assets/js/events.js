@@ -50,7 +50,7 @@ function find_date_range(start, end){
     var start_date = Date.parse(start);
     var end_date = Date.parse(end);
     var dates_in_range = [];
-    if(end_date != ""){
+    if(end != ""){
         for(let d of filtered){
             if(Date.parse(d["event-start-date"]) >= start_date && Date.parse(d["event-end-date"]) <= end_date){
                 dates_in_range.push(d);
@@ -145,9 +145,10 @@ function getDateRange(){
     }
     if(should_call){
         document.getElementById("warn").innerHTML = "";
-        console.log(start, end)
         find_date_range(String(start), String(end));
     }
+    document.getElementById("start").value = "";
+    document.getElementById("end").value = "";
 }
 
 // To reset the fields, call get_data()
